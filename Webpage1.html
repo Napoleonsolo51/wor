@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html> <!--documentation type-->
+
+<html lang="en"> <!--HTML declaration tag, and language which is set to English-->
+<head>
+    <meta charset="utf-8" /> <!--specifies which character set my page is written in, UTF is encoding al possible chracters-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--gives the browser instructions on how to control the page's dimensions and scaling-->
+
+    <title>Primary School page</title><!--declaring the title, will be displayed in the broswer's bar and search results-->
+
+    <link rel="stylesheet" type="text/css" href="css/style2.css" /> <!--Link to my css folder-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--using font awesome for the social media icons-->
+</head> <!--closing header tag-->
+
+<body>
+    <!--opening body tag-->
+    
+    <div class="header">
+        <!--opening div for class header-->
+        <div id="logo">
+            <img src="images/logo_transparent.png" class="logo" alt="school logo" />
+        </div>
+        <!--<h1>Essex School for the gifted</h1>main title with heading level 1-->
+        <!--<p>Making life great for gifted children</p>-->
+
+    </div><!--closing div for class header-->
+        <div class="topnav">
+            <!--Nav bar-->
+            <a class="active" href="#home">Home</a>
+            <a href="#news">News and Events</a>
+            <a href="#contact">Contact Us</a>.
+            <a href="#about">About</a>
+            <a href="useful infomration">Useful Information</a>
+            <a href="our school">Our School</a>
+            <a href="curriculum">Curriculum</a>
+            <a href="support">Support</a>
+            <a href="admissions">Admissions</a>
+        </div>
+
+        <div class="row">
+            <!--opening div row class-->
+            <div class="side">
+                <!--opening div side class-->
+                <h2>About the school</h2> <!--Second header with heading level 2-->
+                <h5>Head Teacher: Leon Henry</h5><!--heading level 5-->
+                <img src="images/Leon%20Copy.jpg" class="border" width="400" height="267" alt="me"> <!--head teacher img using a border calling border class-->
+                <p>
+                    <!--paragraph about the school-->
+                    Welcome to the Essex school for the gifted website. Whether you are a current or prospective parent or just interested in our school I hope you enjoy finding out more about us.
+                    Our school is a small village school where traditional activities are valued and enjoyed alongside a modern global educational experience.
+                    At our school we aim to provide the best possible education in a friendly, secure and caring environment. We value the uniqueness of each child and seek to foster in them a love of learning, an appreciation of beauty and a consideration for others.
+                </p>
+                <h3>Term Dates</h3><!--heading level 3 about term dates-->
+                <p>Term dates and non-pupil days 2019 - 2020</p><!--paragraph-->
+                <div class="fakeimg" style="height:60px;"><b><u>Autumn Term:</u></b> Tuesday 3 September 2019 - Thursday 19 December 2019 </div><br><!--some line breaks and bold styling an u for underline of Autumn Term-->
+                <div class="fakeimg" style="height:60px;"><b><u>Spring Term:</u></b> Monday 6 January 2020 - Friday 3 April 2020</div><br><!--some line breaks and bold styling an u for underline of Spring Term-->
+                <div class="fakeimg" style="height:60px;"><b><u>Summer Term:</u></b> Monday 20 April 2020 - Wednesday 22 July 2020</div><!--some line breaks and bold styling an u for underline of Summer Term -->
+            </div><!--closing div side class-->
+            <div class="main">
+                <!--main page with info about how the school learn-->
+                <h2>Learning Together</h2><!--heading level 2-->
+                <h5>Our Class room</h5><!--heading level 5-->
+                <img src="images/blackboardlearning.jpg" alt="blackboard"> <!--image about learning-->
+                <p>Some text...</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <br>
+                <h2>Learning To Read</h2><!--description with heading level 2-->
+                <h5>Title description</h5><!--description with heading level 5-->
+                <img src="images/boyreading.jpg" alt="boy reading"> <!--boy reading image-->
+                <p>Some Text...</p><!--paragraph with open and closing tag-->
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div><!--closing div main class-->
+        </div><!--closing div class row-->
+        <div class="container">
+            <!--opening div for the container-->
+            <div style="text-align:center">
+                <h2>Contact Us</h2><!--contact us in a heading level 2-->
+                <p>Send us a message:</p>
+            </div>
+            <div style="text-align:center">
+                <!--opening div to center the text-->
+                <p><b>Essex School for the gifted</b><br />Arden House<br /> Middlemarch Park<br /> Coventry<br /> CV3 4FJ <br /><i>Tel.</i>0800 268 7737</p><!--paragraph with some line break tags, makes the next element show up on a new line, also i to make the TEL. italic and B to bold the name of the school-->
+            </div><!--closing div for text container-->
+
+            <div class="row">
+                <!--openig div for the row-->
+                <div class="column">
+                    <!--opening div for the column-->
+                    <form action="/action_page.php">
+                        <!--contact form -->
+                        <label for="fname">First Name</label><!--add first name-->
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label><!--add last name-->
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">Country</label><!--dropwdown to select country if not in the UK-->
+                        <select id="country" name="country">
+                            <option value="united kingdom">United Kingdom</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="netherlands">Netherlands</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <label for="subject">Subject</label><!--comment or subject box -->
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <input type="submit" value="Submit"><!--submit button-->
+                    </form><!--closing tag for the form-->
+                </div><!--closing div for the column-->
+                <img src="images/kidswalk.jpg" width="500" height="490" alt="kids walking" class="border" /> <!--image with kids walking-->
+            </div><!--closing div for the row-->
+        </div> <!--closing div for the container-->
+
+        <div class="footer">
+            <!--opening div for footer -->
+            <h2>Social Media</h2><!--social media section using industry standard icons from font awesome-->
+            <a href="#" class="fa fa-facebook"></a><!--FaceBook icon from font awesome-->
+            <a href="#" class="fa fa-twitter"></a><!--Twitter icon from font awesome-->
+            <a href="#" class="fa fa-linkedin"></a><!--Linkedin icon from font awesome-->
+            <a href="#" class="fa fa-instagram"></a><!--Instagram icon from font awesome-->
+            <a href="#" class="fa fa-skype"></a><!--Skype icon from font awesome-->
+            <p>Site created by Leon G Henry</p> <!--contact details about who created the site-->
+            <p>Site hosted by LGH Design: <a href="mailtoleonhenry4motion@hotmail.com">leon@arden.com</a>.</p> <!--link to my email address-->
+            <p><a href="http://www.arden.ac.uk">Visit our website</a></p><!--link to Arden website-->
+        </div><!--closing div for footer-->
+
+</body> <!--Body closing tag-->
+</html> <!--HTML closing tag-->
